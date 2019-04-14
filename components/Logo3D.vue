@@ -1,9 +1,5 @@
 <template>
-  <div
-    ref="canvas"
-    class="logo-15x4-3d h-screen w-screen"
-    @mousemove="updateCoordinates"
-  ></div>
+  <div ref="canvas"></div>
 </template>
 
 <script>
@@ -17,8 +13,10 @@ export default {
     }
   }),
   mounted() {
-    const width = 960
-    const height = 500
+    window.addEventListener('mousemove', this.updateCoordinates)
+
+    const width = this.$refs.canvas.offsetWidth
+    const height = this.$refs.canvas.offsetHeight
 
     const scene = new THREE.Scene()
     const camera = new THREE.PerspectiveCamera(25, width / height, 0.1, 1000)
@@ -76,9 +74,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.logo-15x4-3d {
-  @apply pt-32;
-}
-</style>

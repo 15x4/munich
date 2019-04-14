@@ -17,7 +17,9 @@
     "@nuxtjs/pwa": "^2.6.0",
     "cross-env": "^5.2.0",
     "nuxt": "^2.4.0",
-    "three": "^0.103.0"
+    "particles.js": "^2.0.0",
+    "three": "^0.103.0",
+    "vue-particles": "^1.0.9"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",

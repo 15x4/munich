@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'DINNextW1G';
+  src: url('/fonts/DINNextW1G-UltraLightIt.eot');
+  src: url('/fonts/DINNextW1G-UltraLightIt.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/DINNextW1G-UltraLightIt.svg#DINNextW1G-UltraLightIt') format('svg'),
+       url('/fonts/DINNextW1G-UltraLightIt.ttf') format('truetype'),
+       url('/fonts/DINNextW1G-UltraLightIt.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'DINNextW1G';
+  src: url('/fonts/DINNextW1G-UltraLight.eot');
+  src: url('/fonts/DINNextW1G-UltraLight.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/DINNextW1G-UltraLight.svg#DINNextW1G-UltraLight') format('svg'),
+       url('/fonts/DINNextW1G-UltraLight.ttf') format('truetype'),
+       url('/fonts/DINNextW1G-UltraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINNextW1G';
+  src: url('/fonts/DINNextW1G-Regular.eot');
+  src: url('/fonts/DINNextW1G-Regular.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/DINNextW1G-Regular.svg#DINNextW1G-Regular') format('svg'),
+       url('/fonts/DINNextW1G-Regular.ttf') format('truetype'),
+       url('/fonts/DINNextW1G-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINNextW1G';
+  src: url('/fonts/DINNextW1G-MediumItalic.eot');
+  src: url('/fonts/DINNextW1G-MediumItalic.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/DINNextW1G-MediumItalic.svg#DINNextW1G-MediumItalic') format('svg'),
+       url('/fonts/DINNextW1G-MediumItalic.ttf') format('truetype'),
+       url('/fonts/DINNextW1G-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'DINNextW1G';
+  src: url('/fonts/DINNextW1G-Medium.eot');
+  src: url('/fonts/DINNextW1G-Medium.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/DINNextW1G-Medium.svg#DINNextW1G-Medium') format('svg'),
+       url('/fonts/DINNextW1G-Medium.ttf') format('truetype'),
+       url('/fonts/DINNextW1G-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINNextW1G';
+  src: url('/fonts/DINNextW1G-LightItalic.eot');
+  src: url('/fonts/DINNextW1G-LightItalic.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/DINNextW1G-LightItalic.svg#DINNextW1G-LightItalic') format('svg'),
+       url('/fonts/DINNextW1G-LightItalic.ttf') format('truetype'),
+       url('/fonts/DINNextW1G-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'DINNextW1G';
+  src: url('/fonts/DINNextW1G-Light.eot');
+  src: url('/fonts/DINNextW1G-Light.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/DINNextW1G-Light.svg#DINNextW1G-Light') format('svg'),
+       url('/fonts/DINNextW1G-Light.ttf') format('truetype'),
+       url('/fonts/DINNextW1G-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINNextW1G';
+  src: url('/fonts/DINNextW1G-Italic.eot');
+  src: url('/fonts/DINNextW1G-Italic.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/DINNextW1G-Italic.svg#DINNextW1G-Italic') format('svg'),
+       url('/fonts/DINNextW1G-Italic.ttf') format('truetype'),
+       url('/fonts/DINNextW1G-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'DINNextW1G';
+  src: url('/fonts/DINNextW1G-HeavyItalic.eot');
+  src: url('/fonts/DINNextW1G-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/DINNextW1G-HeavyItalic.svg#DINNextW1G-HeavyItalic') format('svg'),
+       url('/fonts/DINNextW1G-HeavyItalic.ttf') format('truetype'),
+       url('/fonts/DINNextW1G-HeavyItalic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'DINNextW1G';
+  src: url('/fonts/DINNextW1G-Heavy.eot');
+  src: url('/fonts/DINNextW1G-Heavy.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/DINNextW1G-Heavy.svg#DINNextW1G-Heavy') format('svg'),
+       url('/fonts/DINNextW1G-Heavy.ttf') format('truetype'),
+       url('/fonts/DINNextW1G-Heavy.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINNextW1G';
+  src: url('/fonts/DINNextW1G-BoldItalic.eot');
+  src: url('/fonts/DINNextW1G-BoldItalic.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/DINNextW1G-BoldItalic.svg#DINNextW1G-BoldItalic') format('svg'),
+       url('/fonts/DINNextW1G-BoldItalic.ttf') format('truetype'),
+       url('/fonts/DINNextW1G-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'DINNextW1G';
+  src: url('/fonts/DINNextW1G-Bold.eot');
+  src: url('/fonts/DINNextW1G-Bold.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/DINNextW1G-Bold.svg#DINNextW1G-Bold') format('svg'),
+       url('/fonts/DINNextW1G-Bold.ttf') format('truetype'),
+       url('/fonts/DINNextW1G-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINNextW1G';
+  src: url('/fonts/DINNextW1G-BlackItalic.eot');
+  src: url('/fonts/DINNextW1G-BlackItalic.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/DINNextW1G-BlackItalic.svg#DINNextW1G-BlackItalic') format('svg'),
+       url('/fonts/DINNextW1G-BlackItalic.ttf') format('truetype'),
+       url('/fonts/DINNextW1G-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'DINNextW1G';
+  src: url('/fonts/DINNextW1G-Black.eot');
+  src: url('/fonts/DINNextW1G-Black.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/DINNextW1G-Black.svg#DINNextW1G-Black') format('svg'),
+       url('/fonts/DINNextW1G-Black.ttf') format('truetype'),
+       url('/fonts/DINNextW1G-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
