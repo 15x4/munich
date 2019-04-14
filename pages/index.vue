@@ -6,10 +6,10 @@
         <span class="hidden">15x4 Munich</span>
         <component :is="enable3d ? 'Logo3D' : 'Logo'" class="h-64 w-64 z-10" />
       </h1>
-      <p class="tagline">
+      <p class="tagline" :class="{ 'mt-10': !enable3d }">
         Share Your Knowledge!
       </p>
-      <Play class="mt-10" />
+      <Play class="mt-10 mb-2" />
     </header>
 
     <nav ref="mainNav" class="menu">
@@ -188,17 +188,11 @@ export default {
 .particle, .particle > canvas, #particles-js { z-index: -1 !important; } 
 
 .menu {
-  @apply sticky bg-white pt-0 z-50 pin-t w-full -mt-10;
+  @apply hidden sticky bg-white pt-0 z-50 pin-t w-full -mt-10;
 }
 
-/* @screen sm {
-  .menu {
-    @apply hidden;
-  }
-} */
-
 .menu ul {
-  @apply list-reset flex justify-center;
+  @apply list-reset flex flex-wrap justify-center;
 }
 .menu ul li {
   @apply mr-12;
@@ -245,13 +239,10 @@ header.slide {
   z-index: 0;
 }
 .feature {
-  @apply flex text-left m-auto w-5/6 overflow-hidden mt-20;
-}
-.feature.reverse {
-  @apply flex-row-reverse;
+  @apply m-auto overflow-hidden mt-20;
 }
 .feature article {
-  @apply w-2/3 flex flex-col p-10 content-between pr-32;
+  @apply flex flex-col p-10;
 }
 .feature h3 {
   @apply text-4xl text-black font-extrabold font-sans pb-4;
@@ -260,7 +251,7 @@ header.slide {
   @apply text-lg font-light pb-6 leading-normal;
 }
 .feature figure {
-  @apply w-1/3 mx-32 mt-20 flex justify-center;
+  @apply mt-20 flex justify-center;
 }
 .feature figure::before {
   content: ' ';
@@ -283,12 +274,54 @@ header.slide {
   margin-top: 117px;
 }
 .feature figure img {
-  @apply m-5 p-3 h-48 bg-grey-lighter;
+  @apply m-5 h-48 w-48 bg-grey-lighter;
+  padding: 15px;
 }
 .feature .btn {
-  @apply self-start py-3 text-center bg-black text-xl font-medium text-white no-underline inline-block mt-4 shadow-md;
+  @apply py-3 text-center bg-black text-xl font-medium text-white no-underline inline-block mt-4 shadow-md;
   width: 190px;
 }
+
+.feature, .feature.reverse {
+  @apply flex flex-col w-full text-center;
+}
+.feature article {
+  @apply w-full;
+}
+.feature figure {
+  @apply w-full;
+}
+.feature .btn {
+  @apply mx-auto;
+}
+
+@screen md {
+  .feature {
+    @apply flex flex-row w-5/6 text-left; 
+  }
+  .feature.reverse {
+    @apply flex-row-reverse;
+  }
+  .feature article {
+    @apply w-2/3 content-between pr-32;
+  }
+  .feature figure {
+    @apply w-1/3 mx-32;
+  }
+  .feature .btn {
+    @apply self-start m-0;
+  }
+  .feature h3 {
+    @apply text-left;
+  }
+  .feature p {
+    @apply text-left;
+  }
+  .menu {
+    @apply block;
+  }
+}
+
 .btn::after {
   display: block;
   content: ' ';
