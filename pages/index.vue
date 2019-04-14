@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div id="particles-js"></div>
     <header class="slide flex flex-col">
       <h1 class="flex align-center justify-center">
         <span class="hidden">15x4 Munich</span>
@@ -139,9 +140,6 @@ export default {
       window.onscroll = this.onScroll
     }
     if (this.enableParticles && window) {
-      document
-        .getElementsByTagName('body')[0]
-        .setAttribute('id', 'particles-js')
       require('particles.js')
       const config = require('assets/config/particlesjs.json')
       this.$nextTick(() => {
@@ -219,7 +217,12 @@ header.slide {
   @apply content-end -mt-16;
 }
 .particles-js-canvas-el {
-  @apply h-full w-full fixed pin-t pin-l z-0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 .feature {
   @apply flex text-left m-auto w-5/6 overflow-hidden mt-20;
