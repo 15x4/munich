@@ -19,16 +19,21 @@
             <Logo class="h-10 w-10" />
           </a>
         </li>
-        <li><a href="#">Participate</a></li>
-        <li><a href="#">Talks</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">FAQ</a></li>
+        <li><a href="#participate">Participate</a></li>
+        <li><a href="#participate">Talks</a></li>
+        <li><a href="#participate">Events</a></li>
+        <li><a href="#participate">About Us</a></li>
+        <li>
+          <a href="https://medium.com/15x4munich" target="_blank">Blog</a>
+        </li>
+        <li>
+          <a href="https://shop.spreadshirt.de/15x4-munich" target="_blank"
+            >Shop</a
+          >
+        </li>
       </ul>
     </nav>
-    <section class="slide">
+    <section id="participate" class="slide">
       <section class="feature reverse">
         <figure>
           <img src="/img/brain.svg" />
@@ -44,7 +49,11 @@
             Get an impression of our previous talks and check out upcoming
             events.
           </p>
-          <a class="btn" href="#">
+          <a
+            class="btn"
+            href="https://www.facebook.com/pg/15x4munich/events/"
+            target="_blank"
+          >
             See events
           </a>
         </article>
@@ -64,7 +73,11 @@
             We believe anyone can be a good speaker, why don’t give it a try
             yourself?
           </p>
-          <a class="btn" href="#">
+          <a
+            class="btn"
+            href="https://goo.gl/forms/G8Cfk3DYO7OsPIWf2"
+            target="_blank"
+          >
             Become a speaker
           </a>
         </article>
@@ -88,7 +101,10 @@
             Join our international team of driven volunteers who believe in the
             power of knowledge sharing.
           </p>
-          <a class="btn" href="#">
+          <a
+            class="btn"
+            href="mailto:munich@15x4.org?subject=I want to volunteer&body=Hi, my name is ... and I want to ..."
+          >
             Become a volunteer
           </a>
         </article>
@@ -111,7 +127,7 @@
             If your reply is yes, we are very eager to hear from you for a
             partnership.
           </p>
-          <a class="btn" href="#">
+          <a class="btn" href="mailto:munich@15x4.org?subject=Partnership">
             Become a partner
           </a>
         </article>
@@ -215,7 +231,7 @@ export default {
   @apply text-4xl text-black font-bold font-sans;
 }
 .slide {
-  @apply w-full min-h-screen justify-center align-bottom items-center text-center;
+  @apply w-full min-h-screen justify-center align-bottom items-center text-center pt-1;
 }
 header.slide {
   @apply content-end -mt-16;
