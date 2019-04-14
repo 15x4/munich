@@ -167,6 +167,10 @@ export default {
 </script>
 
 <style>
+* { z-index: 2; }
+
+.particle, .particle > canvas, #particles-js { z-index: -1 !important; } 
+
 .menu {
   @apply sticky bg-white pt-0 z-50 pin-t w-full -mt-10;
 }
@@ -222,7 +226,7 @@ header.slide {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 .feature {
   @apply flex text-left m-auto w-5/6 overflow-hidden mt-20;
