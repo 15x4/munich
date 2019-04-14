@@ -1,6 +1,17 @@
 <template>
   <div>
-    <nav class="menu">
+    <header class="slide flex flex-col">
+      <h1 class="flex align-center justify-center">
+        <span class="hidden">15x4 Munich</span>
+        <component :is="enable3d ? 'Logo3D' : 'Logo'" class="h-64 w-64 z-10" />
+      </h1>
+      <p class="tagline">
+        Share Your Knowledge!
+      </p>
+      <Play class="mt-10" />
+    </header>
+
+    <nav ref="mainNav" class="menu">
       <ul>
         <li class="home">
           <a href="#">
@@ -16,16 +27,6 @@
         <li><a href="#">FAQ</a></li>
       </ul>
     </nav>
-    <header class="slide flex flex-col">
-      <h1 class="flex align-center justify-center">
-        <span class="hidden">15x4 Munich</span>
-        <component :is="enable3d ? 'Logo3D' : 'Logo'" class="h-64 w-64 z-10" />
-      </h1>
-      <p class="tagline sm:text-green">
-        Share Your Knowledge!
-      </p>
-      <Play class="mt-10" />
-    </header>
     <section class="slide">
       <section class="feature reverse">
         <figure>
@@ -134,6 +135,9 @@ export default {
     enable3d: true
   }),
   mounted() {
+    if (window) {
+      window.onscroll = this.onScroll
+    }
     if (this.enableParticles && window) {
       document
         .getElementsByTagName('body')[0]
@@ -149,6 +153,16 @@ export default {
     initParticlesJS(config) {
       /* eslint-disable */
       particlesJS('particles-js', config)
+    },
+    onScroll() {
+      const scrollPosY = window.pageYOffset | document.body.scrollTop
+      const triggerY = this.$refs.mainNav.getBoundingClientRect().top
+
+      if (triggerY <= 0) {
+        document.getElementsByTagName('body')[0].className = 'scrolled'
+      } else {
+        document.getElementsByTagName('body')[0].className = ''
+      }
     }
   }
 }
@@ -156,7 +170,7 @@ export default {
 
 <style>
 .menu {
-  @apply sticky z-50 pin-t pt-10 w-full;
+  @apply sticky bg-white pt-0 z-50 pin-t w-full -mt-10;
 }
 
 /* @screen sm {
@@ -177,29 +191,29 @@ export default {
 .menu ul li a:hover {
   @apply border-white;
 }
-.scolled .menu {
-  @apply  shadow bg-white pt-0 mt-10;
+.scrolled .menu {
+  @apply shadow;
 }
-.scolled .menu ul li a {
+.menu ul li a {
   @apply border-white w-auto pr-4 pt-5;
 }
 .menu .home {
-  @apply hidden;
+  @apply hidden p-2 mr-12;
 }
-.scolled .menu .home {
-  @apply block p-2 mr-12;
+.scrolled .menu .home {
+  @apply block;
 }
-.scolled .menu ul li.home a {
+.menu ul li.home a {
   @apply p-0 w-auto;
 }
-.scolled .menu ul li a:hover {
+.menu ul li a:hover {
   @apply text-grey;
 }
 .tagline { 
   @apply text-4xl text-black font-bold font-sans;
 }
 .slide {
-  @apply w-full min-h-screen justify-center align-bottom items-center text-center border-b-2 border-grey;
+  @apply w-full min-h-screen justify-center align-bottom items-center text-center;
 }
 header.slide {
   @apply content-end -mt-16;
