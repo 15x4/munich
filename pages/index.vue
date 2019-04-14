@@ -10,6 +10,9 @@
         Share Your Knowledge!
       </p>
       <Play class="mt-10 mb-2" />
+      <section id="scroll-arrow">
+        <a href="#participate"><span></span>Scroll</a>
+      </section>
     </header>
 
     <nav ref="mainNav" class="menu">
@@ -171,12 +174,16 @@ export default {
     onScroll() {
       const scrollPosY = window.pageYOffset | document.body.scrollTop
       const triggerY = this.$refs.mainNav.getBoundingClientRect().top
+      const classes = []
 
-      if (triggerY <= 0) {
-        document.getElementsByTagName('body')[0].className = 'scrolled'
-      } else {
-        document.getElementsByTagName('body')[0].className = ''
+      if (scrollPosY > 0) {
+        classes.push('scrolled')
       }
+      if (triggerY <= 0) {
+        classes.push('menu-scrolled')
+      }
+
+      document.getElementsByTagName('body')[0].className = classes.join(' ')
     }
   }
 }
@@ -188,7 +195,8 @@ export default {
 .particle, .particle > canvas, #particles-js { z-index: -1 !important; } 
 
 .menu {
-  @apply hidden sticky bg-white pt-0 z-50 pin-t w-full -mt-10;
+  @apply hidden sticky pt-0 z-50 pin-t w-full -mt-10;
+  transition: all 0.5s;
 }
 
 .menu ul {
@@ -203,8 +211,8 @@ export default {
 .menu ul li a:hover {
   @apply border-white;
 }
-.scrolled .menu {
-  @apply shadow;
+.menu-scrolled .menu {
+  @apply shadow bg-white;
 }
 .menu ul li a {
   @apply border-white w-auto pr-4 pt-5;
@@ -212,7 +220,7 @@ export default {
 .menu .home {
   @apply hidden p-2 mr-12;
 }
-.scrolled .menu .home {
+.menu-scrolled .menu .home {
   @apply block;
 }
 .menu ul li.home a {
@@ -283,7 +291,7 @@ header.slide {
 }
 
 .feature, .feature.reverse {
-  @apply flex flex-col w-full text-center;
+  @apply flex flex-col w-full text-left;
 }
 .feature article {
   @apply w-full;
@@ -293,6 +301,9 @@ header.slide {
 }
 .feature .btn {
   @apply mx-auto;
+}
+.feature h3 {
+  @apply mt-10;
 }
 
 @screen md {
@@ -312,7 +323,7 @@ header.slide {
     @apply self-start m-0;
   }
   .feature h3 {
-    @apply text-left;
+    @apply text-left mt-0;
   }
   .feature p {
     @apply text-left;
@@ -339,5 +350,70 @@ header.slide {
 }
 .feature .btn:hover::after {
   border-color: transparent transparent transparent config('colors.grey-darker');
+}
+
+#scroll-arrow a {
+  @apply font-sans text-black;
+  position: absolute;
+  bottom: 0px;
+  right: 30px;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+  padding-top: 70px;
+}
+
+#scroll-arrow a:hover {
+  opacity: .5;
+}
+
+#scroll-arrow a span {
+  position: absolute;
+  right: 14px;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  border-left: 1px solid #333333;
+  border-bottom: 1px solid #333;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+
+.scrolled #scroll-arrow {
+  @apply hidden;
+}
+
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
 }
 </style>
