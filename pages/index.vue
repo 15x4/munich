@@ -1,15 +1,29 @@
 <template>
-  <div>
+  <div :class="{ video: enableVideo }">
     <div id="particles-js"></div>
+    <div v-show="enableVideo" class="video-background">
+      <div class="video-foreground">
+        <iframe
+          src="https://www.youtube.com/embed/haxcYFFOe6w?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
     <header class="slide flex flex-col">
       <h1 class="flex align-center justify-center">
         <span class="hidden">15x4 Munich</span>
-        <component :is="enable3d ? 'Logo3D' : 'Logo'" class="h-64 w-64 z-10" />
+        <component
+          :is="enable3d && !enableVideo ? 'Logo3D' : 'Logo'"
+          class="h-64 w-64 z-10"
+        />
       </h1>
       <p class="tagline" :class="{ 'mt-10': !enable3d }">
         Share Your Knowledge!
       </p>
-      <Play class="mt-10 mb-2" />
+      <a href="#" class="play" @click="enableVideo = !enableVideo">
+        <Play />
+      </a>
       <section id="scroll-arrow">
         <a href="#participate"><span></span>Scroll</a>
       </section>
@@ -152,7 +166,8 @@ export default {
   },
   data: () => ({
     enableParticles: true,
-    enable3d: true
+    enable3d: true,
+    enableVideo: false
   }),
   mounted() {
     if (window) {
@@ -206,7 +221,7 @@ export default {
   @apply mr-12;
 }
 .menu ul li a {
-  @apply text-black no-underline font-sans border-black border-t pt-4 pb-5 block w-24 text-xs uppercase;
+  @apply text-black no-underline font-sans pt-4 pb-5 block w-24 text-xs uppercase;
 }
 .menu ul li a:hover {
   @apply border-white;
@@ -237,6 +252,21 @@ export default {
 }
 header.slide {
   @apply content-end -mt-16;
+}
+.video h1, .video header p {
+  @apply invisible
+}
+.video .menu a {
+  @apply text-white
+}
+.menu-scrolled .video .menu a {
+  @apply text-black
+}
+.play {
+  @apply mt-10 mb-2
+}
+.video .play {
+  @apply text-white fill-current
 }
 .particles-js-canvas-el {
   position: fixed;
@@ -390,6 +420,15 @@ header.slide {
   @apply hidden;
 }
 
+.video #scroll-arrow a {
+  @apply text-white;
+}
+
+.video #scroll-arrow a span {
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
 @-webkit-keyframes sdb05 {
   0% {
     -webkit-transform: rotate(-45deg) translate(0, 0);
@@ -415,5 +454,24 @@ header.slide {
     transform: rotate(-45deg) translate(-20px, 20px);
     opacity: 0;
   }
+}
+
+.video-background {
+  background: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 </style>
