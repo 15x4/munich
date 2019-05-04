@@ -277,7 +277,7 @@ header.slide {
   z-index: 0;
 }
 .feature {
-  @apply m-auto overflow-hidden mt-20;
+  @apply overflow-hidden mt-20;
 }
 .feature article {
   @apply flex flex-col p-10;
@@ -337,8 +337,8 @@ header.slide {
 }
 
 @screen md {
-  .feature {
-    @apply flex flex-row w-5/6 text-left; 
+  .feature, .feature.reverse {
+    @apply m-auto flex flex-row w-5/6 text-left; 
   }
   .feature.reverse {
     @apply flex-row-reverse;
