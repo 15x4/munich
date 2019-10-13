@@ -36,20 +36,40 @@
             <Logo class="h-10 w-10" />
           </a>
         </li>
-        <li><a href="#participate">Participate</a></li>
-        <li><a href="#participate">Talks</a></li>
-        <li><a href="#participate">Events</a></li>
-        <li><a href="#participate">About Us</a></li>
         <li>
-          <a href="https://medium.com/15x4munich" target="_blank">Blog</a>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd-Z-wGW1yWX1Bm_ZPyCeeYluhyOuONiguwPS05_IuZiYJITg/viewform"
+            target="_blank"
+            >Contact Us</a
+          >
         </li>
         <li>
           <a href="https://shop.spreadshirt.de/15x4-munich" target="_blank"
-            >Shop</a
+            >Fan Shop</a
           >
         </li>
       </ul>
     </nav>
+    <section class="feature reverse">
+      <article>
+        <h3>What is 15x4?</h3>
+        <p>
+          15x4 is a series of non-commercial science communication events
+          happening in different countries around the world.
+        </p>
+        <p>
+          We organize free educational meetings, which feature four popular
+          science talks of fifteen minutes each.
+        </p>
+        <p>
+          Our goal is to promote the idea of science communication and make
+          knowledge more approachable.
+        </p>
+        <p>
+          Speak out and share your knowledge!
+        </p>
+      </article>
+    </section>
     <section id="participate" class="slide">
       <section class="feature reverse">
         <figure>
@@ -68,7 +88,7 @@
           </p>
           <a
             class="btn"
-            href="https://www.facebook.com/pg/15x4munich/events/"
+            href="https://www.eventbrite.com/o/15x4-munich-18733203881"
             target="_blank"
           >
             See events
@@ -120,7 +140,7 @@
           </p>
           <a
             class="btn"
-            href="mailto:munich@15x4.org?subject=I want to volunteer&body=Hi, my name is ... and I want to ..."
+            href="https://docs.google.com/forms/d/e/1FAIpQLScEcvp6Dtfgm_ZexvODfGD3d2zX15yUXhBL_MkX4IT_w6anGA/viewform"
           >
             Become a volunteer
           </a>
@@ -144,11 +164,58 @@
             If your reply is yes, we are very eager to hear from you for a
             partnership.
           </p>
-          <a class="btn" href="mailto:munich@15x4.org?subject=Partnership">
+          <a
+            class="btn"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScdVynxfnrx_ebskWez3mT3Y7EBLmZGRtOhxm1DaWrkrAu-ow/viewform"
+          >
             Become a partner
           </a>
         </article>
       </section>
+    </section>
+    <section class="feature reverse">
+      <article>
+        <h3>Stay updated and subscribe to our newsletter!</h3>
+        <p>
+          <a class="btn" href="http://eepurl.com/cRRmZ9" target="_blank"
+            >Subscribe</a
+          >
+        </p>
+      </article>
+    </section>
+
+    <section class="feature social">
+      <article>
+        <h3>Follow us on</h3>
+        <p>
+          <a href="https://www.facebook.com/15x4munich/" target="_blank">
+            <i class="fab fa-facebook-square"></i><span>Facebook</span></a
+          >
+          <a href="https://www.instagram.com/15x4munich/" target="_blank">
+            <i class="fab fa-instagram"></i><span>Instagram</span></a
+          >
+          <a href="https://www.meetup.com/de-DE/15x4munich/" target="_blank">
+            <i class="fab fa-meetup"></i><span>Meetup</span></a
+          >
+          <a href="https://twitter.com/15x4M" target="_blank">
+            <i class="fab fa-twitter-square"></i><span>Twitter</span></a
+          >
+          <a
+            href="https://www.youtube.com/channel/UCdYIq_Qa_XsQ7bqbokjVsvw"
+            target="_blank"
+          >
+            <i class="fab fa-youtube-square"></i><span>YouTube</span>
+          </a>
+        </p>
+      </article>
+    </section>
+    <section class="feature reverse">
+      <article>
+        <p>
+          Source code of this website is available at
+          <a href="https://github.com/15x4/munich" target="_blank">GitHub</a>.
+        </p>
+      </article>
     </section>
   </div>
 </template>
@@ -157,6 +224,8 @@
 import Logo from '~/components/Logo.vue'
 import Logo3D from '~/components/Logo3D.vue'
 import Play from '~/components/Play.vue'
+import '@fortawesome/fontawesome-free/css/all.css'
+import '@fortawesome/fontawesome-free/js/all.js'
 
 export default {
   components: {
@@ -207,10 +276,24 @@ export default {
 <style>
 * { z-index: 2; }
 
+.social, .social article {
+  width: 100% !important;
+}
+.social span {
+  display: none;
+}
+.social a {
+  font-size: 60px;
+  margin: 10px;
+  color: #333333;
+}
+.social a:hover {
+  color: #666666;
+}
 .particle, .particle > canvas, #particles-js { z-index: -1 !important; } 
 
 .menu {
-  @apply hidden sticky pt-0 z-50 pin-t w-full -mt-10;
+  @apply block sticky pt-0 z-50 pin-t w-full -mt-10;
   transition: all 0.5s;
 }
 
@@ -275,6 +358,9 @@ header.slide {
   width: 100%;
   height: 100%;
   z-index: 0;
+}
+.video .particles-js-canvas-el {
+  display: none;
 }
 .feature {
   @apply overflow-hidden mt-20;
