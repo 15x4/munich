@@ -50,7 +50,7 @@
         </li>
       </ul>
     </nav>
-    <section class="feature reverse">
+    <section class="intro">
       <article>
         <h3>What is 15x4?</h3>
         <p>
@@ -69,6 +69,9 @@
           Speak out and share your knowledge!
         </p>
       </article>
+      <figure>
+        <img src="/img/we.jpg" />
+      </figure>
     </section>
     <section id="participate" class="slide">
       <section class="feature reverse">
@@ -362,13 +365,25 @@ header.slide {
 .video .particles-js-canvas-el {
   display: none;
 }
+.intro {
+  @apply flex flex-col p-10;
+}
+.intro article {
+  @apply flex flex-col;
+}
+.intro figure {
+  @apply flex flex-col;
+}
+.intro p {
+  @apply text-lg font-light pb-6 leading-normal;
+}
 .feature {
   @apply overflow-hidden mt-20;
 }
 .feature article {
   @apply flex flex-col p-10;
 }
-.feature h3 {
+h3 {
   @apply text-4xl text-black font-extrabold font-sans pb-4;
 }
 .feature p {
@@ -425,6 +440,12 @@ header.slide {
 @screen md {
   .feature, .feature.reverse {
     @apply m-auto flex flex-row w-5/6 text-left; 
+  }
+  .intro {
+    @apply flex flex-row-reverse;
+  }
+  .intro article, .intro figure {
+    @apply flex-col p-5;
   }
   .feature.reverse {
     @apply flex-row-reverse;
