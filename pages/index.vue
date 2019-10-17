@@ -37,6 +37,9 @@
           </a>
         </li>
         <li>
+          <a href="/live" target="_blank">Live</a>
+        </li>
+        <li>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSd-Z-wGW1yWX1Bm_ZPyCeeYluhyOuONiguwPS05_IuZiYJITg/viewform"
             target="_blank"
