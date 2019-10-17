@@ -4,7 +4,7 @@
     <div v-show="enableVideo" class="video-background">
       <div class="video-foreground">
         <iframe
-          src="https://www.youtube.com/embed/haxcYFFOe6w?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1"
+          src="https://www.youtube.com/embed/Bd8HqeNM9Ow?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1"
           frameborder="0"
           allowfullscreen
         ></iframe>
@@ -35,9 +35,6 @@
           <a href="#">
             <Logo class="h-10 w-10" />
           </a>
-        </li>
-        <li>
-          <a href="/live" target="_blank">Live</a>
         </li>
         <li>
           <a
