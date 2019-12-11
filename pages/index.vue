@@ -200,7 +200,7 @@
           <a href="https://www.meetup.com/de-DE/15x4munich/" target="_blank">
             <i class="fab fa-meetup"></i><span>Meetup</span></a
           >
-          <a href="https://twitter.com/15x4M" target="_blank">
+          <a href="https://twitter.com/15x4Munich" target="_blank">
             <i class="fab fa-twitter-square"></i><span>Twitter</span></a
           >
           <a
