@@ -212,6 +212,14 @@
         </p>
       </article>
     </section>
+
+    <section class="feature reverse">
+      <article>
+        <p><strong>Impressum</strong></p>
+        <p>15x4 Munich e.V.</p>
+        <p>Vereins ID: München VR 208332</p>
+      </article>
+    </section>
     <section class="feature reverse">
       <article>
         <p>
@@ -277,9 +285,12 @@ export default {
 </script>
 
 <style>
-* { z-index: 2; }
+* {
+  z-index: 2;
+}
 
-.social, .social article {
+.social,
+.social article {
   width: 100% !important;
 }
 .social span {
@@ -293,7 +304,11 @@ export default {
 .social a:hover {
   color: #666666;
 }
-.particle, .particle > canvas, #particles-js { z-index: -1 !important; } 
+.particle,
+.particle > canvas,
+#particles-js {
+  z-index: -1 !important;
+}
 
 .menu {
   @apply block sticky pt-0 z-50 pin-t w-full -mt-10;
@@ -330,7 +345,7 @@ export default {
 .menu ul li a:hover {
   @apply text-grey;
 }
-.tagline { 
+.tagline {
   @apply text-4xl text-black font-bold font-sans;
 }
 .slide {
@@ -339,20 +354,21 @@ export default {
 header.slide {
   @apply content-end -mt-16;
 }
-.video h1, .video header p {
-  @apply invisible
+.video h1,
+.video header p {
+  @apply invisible;
 }
 .video .menu a {
-  @apply text-white
+  @apply text-white;
 }
 .menu-scrolled .video .menu a {
-  @apply text-black
+  @apply text-black;
 }
 .play {
-  @apply mt-10 mb-2
+  @apply mt-10 mb-2;
 }
 .video .play {
-  @apply text-white fill-current
+  @apply text-white fill-current;
 }
 .particles-js-canvas-el {
   position: fixed;
@@ -421,7 +437,8 @@ h3 {
   width: 190px;
 }
 
-.feature, .feature.reverse {
+.feature,
+.feature.reverse {
   @apply flex flex-col w-full text-left;
 }
 .feature article {
@@ -438,13 +455,15 @@ h3 {
 }
 
 @screen md {
-  .feature, .feature.reverse {
-    @apply m-auto flex flex-row w-5/6 text-left; 
+  .feature,
+  .feature.reverse {
+    @apply m-auto flex flex-row w-5/6 text-left;
   }
   .intro {
     @apply flex flex-row-reverse;
   }
-  .intro article, .intro figure {
+  .intro article,
+  .intro figure {
     @apply flex-col p-5;
   }
   .feature.reverse {
@@ -498,14 +517,14 @@ h3 {
   display: inline-block;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   text-decoration: none;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
   padding-top: 70px;
 }
 
 #scroll-arrow a:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 #scroll-arrow a span {
