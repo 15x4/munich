@@ -115,7 +115,7 @@
           </p>
           <a
             class="btn"
-            href="https://goo.gl/forms/G8Cfk3DYO7OsPIWf2"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf1M9_FjiF0NTj2lvQYbA_rDBSi8g_8v0wmJ3ejR_2M-afZFQ/viewform?usp=sf_link"
             target="_blank"
           >
             Become a speaker
@@ -143,7 +143,7 @@
           </p>
           <a
             class="btn"
-            href="https://docs.google.com/forms/d/e/1FAIpQLScEcvp6Dtfgm_ZexvODfGD3d2zX15yUXhBL_MkX4IT_w6anGA/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfVs6SrGNN2lory7kxDjIvp-Hdd2_8oqkpgY0wISrNYhzrxfQ/viewform?usp=sf_link"
           >
             Become a volunteer
           </a>
