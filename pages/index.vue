@@ -169,7 +169,7 @@
           </p>
           <a
             class="btn"
-            href="https://docs.google.com/forms/d/e/1FAIpQLScdVynxfnrx_ebskWez3mT3Y7EBLmZGRtOhxm1DaWrkrAu-ow/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc6KcYffi_49lBqrwWtmWq4bLXNbiFZKgOjVHnV70PzrzHL8w/viewform?usp=sf_link"
           >
             Become a partner
           </a>
