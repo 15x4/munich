@@ -1,6 +1,6 @@
 [build]
-  command = "yarn generate && find . -name 'index.html' -not -path './node_modules/*' | head -20 && echo '---' && ls -la .output/ 2>/dev/null || echo 'NO .output dir' && ls -la dist/ 2>/dev/null || echo 'NO dist dir'"
-  publish = ".output/public"
+  command = "yarn generate"
+  publish = "dist"
 
 [build.environment]
   NODE_VERSION = "22"
