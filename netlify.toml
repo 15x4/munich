@@ -1,5 +1,5 @@
 [build]
-  command = "node -v && yarn generate 2>&1 && echo '--- listing .output ---' && ls -la .output/ && ls -la .output/public/ | head -20"
+  command = "npm rebuild better-sqlite3 && yarn generate"
   publish = ".output/public"
 
 [build.environment]
