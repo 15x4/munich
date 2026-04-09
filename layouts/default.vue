@@ -4,6 +4,11 @@
     <main class="flex-1">
       <slot />
     </main>
+    <section class="bg-primary py-8">
+      <ClientOnly>
+        <Logo3D />
+      </ClientOnly>
+    </section>
     <AppFooter />
   </div>
 </template>

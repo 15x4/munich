@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "home": "Home",
+    "events": "Events",
+    "about": "About",
+    "contact": "Contact",
+    "giveATalk": "Give a Talk"
+  },
+  "hero": {
+    "tagline": "15 Minutes About Anything",
+    "title": "Share Your Knowledge!",
+    "description": "Four speakers. Fifteen minutes each. Any topic. Free events for curious minds in Munich.",
+    "attendEvent": "Attend an Event",
+    "giveATalk": "Give a Talk"
+  },
+  "upcoming": {
+    "comingSoon": "Coming Soon",
+    "nextEvent": "Next Event",
+    "viewDetails": "View Details"
+  },
+  "whatIs": {
+    "label": "About Us",
+    "title": "What is 15x4?",
+    "p1": "15x4 is a series of non-commercial science communication events happening in different countries around the world.",
+    "p2": "We organize free educational meetings featuring four popular science talks of fifteen minutes each.",
+    "p3": "Our goal is to promote science communication and make knowledge more approachable.",
+    "anyone": "Anyone can be a speaker!"
+  },
+  "stats": {
+    "speakers": "Speakers",
+    "minutesEach": "Minutes Each",
+    "cost": "Cost",
+    "topics": "Topics"
+  },
+  "features": {
+    "label": "Get Involved",
+    "title": "Four Ways to Join",
+    "learn": "Learn",
+    "learnDesc": "Discover fascinating topics from passionate speakers, completely free.",
+    "speak": "Speak",
+    "speakDesc": "Share your knowledge and develop public speaking skills in a supportive environment.",
+    "volunteer": "Volunteer",
+    "volunteerDesc": "Join our international team of driven volunteers who believe in knowledge sharing.",
+    "partner": "Partner",
+    "partnerDesc": "Collaborate with us to reach an audience of science enthusiasts and tech lovers."
+  },
+  "cta": {
+    "title": "Ready to Share Your Knowledge?",
+    "description": "Whether you want to give a talk, attend an event, or help organize, there is a place for you at 15x4 Munich.",
+    "applyToSpeak": "Apply to Speak",
+    "volunteer": "Volunteer"
+  },
+  "about": {
+    "pageTitle": "About - 15x4 Munich",
+    "heroTitle": "About 15x4",
+    "heroDescription": "A global movement making knowledge accessible through short, engaging talks.",
+    "formatLabel": "The Format",
+    "howItWorks": "How It Works",
+    "speakersTitle": "Speakers",
+    "speakersDesc": "Each event features four speakers who are passionate about their topic. No academic credentials required -- just enthusiasm and curiosity.",
+    "minutesTitle": "Minutes",
+    "minutesDesc": "Each talk is exactly 15 minutes. This constraint forces speakers to distill complex ideas into clear, engaging presentations.",
+    "costTitle": "Cost",
+    "costDesc": "All events are completely free. Knowledge should be accessible to everyone, with no barriers to entry.",
+    "topicsTitle": "Topics",
+    "topicsDesc": "From quantum physics to cooking, from history to AI. Any topic is welcome as long as the speaker is passionate about it.",
+    "since": "Since 2017",
+    "ourStory": "Our Story",
+    "storyP1": "15x4 started as a grassroots science communication initiative and has grown into a global network with chapters in multiple countries.",
+    "storyP2": "The Munich chapter was founded in 2017 by a group of science enthusiasts who wanted to bring this format to the city. After hosting many events and building a wonderful community, we are now being revived in 2026 with fresh energy and new ideas.",
+    "storyP3": "Our mission remains the same: make knowledge sharing",
+    "storyP3Bold": "fun, accessible, and community-driven",
+    "thePeople": "The People",
+    "organizers": "Organizers"
+  },
+  "events": {
+    "pageTitle": "Events - 15x4 Munich",
+    "heroTitle": "Events",
+    "heroDescription": "Join us for an evening of curiosity, learning, and great conversations.",
+    "comingUp": "Coming Up",
+    "upcomingEvents": "Upcoming Events",
+    "details": "Details",
+    "noUpcoming": "No upcoming events yet.",
+    "followUs": "Follow us on social media to be the first to know!",
+    "archive": "Archive",
+    "pastEvents": "Past Events",
+    "noPast": "No past events recorded yet."
+  },
+  "eventDetail": {
+    "allEvents": "All Events",
+    "upcoming": "Upcoming",
+    "past": "Past",
+    "lineUp": "Line-up",
+    "talks": "Talks"
+  },
+  "contact": {
+    "pageTitle": "Contact - 15x4 Munich",
+    "heroTitle": "Get in Touch",
+    "heroDescription": "Want to speak, attend, volunteer, or partner? We would love to hear from you.",
+    "joinUs": "Join Us",
+    "howToGetInvolved": "How to Get Involved",
+    "becomeASpeaker": "Become a Speaker",
+    "becomeASpeakerDesc": "Share your passion in a 15-minute talk.",
+    "volunteerWithUs": "Volunteer With Us",
+    "volunteerWithUsDesc": "Help organize events, design, or manage social media.",
+    "partnerWithUs": "Partner With Us",
+    "partnerWithUsDesc": "Provide a venue, sponsor, or collaborate.",
+    "generalInquiry": "General Inquiry",
+    "generalInquiryDesc": "Questions, feedback, or just saying hello.",
+    "social": "Social",
+    "findUsOnline": "Find Us Online",
+    "legalInformation": "Legal Information"
+  },
+  "footer": {
+    "description": "Free educational events with four 15-minute talks on any topic. Knowledge should be accessible to everyone.",
+    "followUs": "Follow Us",
+    "legal": "Legal"
+  }
+}

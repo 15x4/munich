@@ -7,7 +7,25 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/sitemap',
     '@nuxt/image',
+    '@nuxtjs/i18n',
   ],
+
+  i18n: {
+    locales: [
+      { code: 'en', language: 'en', name: 'EN', file: 'en.json' },
+      { code: 'de', language: 'de', name: 'DE', file: 'de.json' },
+      { code: 'ru', language: 'ru', name: 'RU', file: 'ru.json' },
+      { code: 'es', language: 'es', name: 'ES', file: 'es.json' },
+    ],
+    defaultLocale: 'en',
+    strategy: 'prefix_except_default',
+    langDir: 'locales',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+    },
+  },
 
   css: ['~/assets/css/main.css'],
 
