@@ -18,6 +18,14 @@
     "nextEvent": "Nächste Veranstaltung",
     "viewDetails": "Details ansehen"
   },
+  "venue": {
+    "label": "Wo & Wann",
+    "title": "Komm zu uns ins Buena Vista",
+    "location": "Buena Vista, München",
+    "schedule": "Jeden Mittwoch um 20 Uhr",
+    "startingDate": "Ab Mai 2026",
+    "doorsOpen": "Einlass ab 19:30 Uhr"
+  },
   "whatIs": {
     "label": "Über uns",
     "title": "Was ist 15x4?",
@@ -76,7 +84,7 @@
   "events": {
     "pageTitle": "Veranstaltungen - 15x4 München",
     "heroTitle": "Veranstaltungen",
-    "heroDescription": "Begleite uns für einen Abend voller Neugier, Lernen und toller Gespräche.",
+    "heroDescription": "Jeden Mittwoch um 20 Uhr im Buena Vista. Begleite uns für einen Abend voller Neugier, Lernen und toller Gespräche.",
     "comingUp": "Demnächst",
     "upcomingEvents": "Kommende Veranstaltungen",
     "details": "Details",

@@ -18,6 +18,14 @@
     "nextEvent": "Próximo evento",
     "viewDetails": "Ver detalles"
   },
+  "venue": {
+    "label": "Donde y cuando",
+    "title": "Nos vemos en Buena Vista",
+    "location": "Buena Vista, Múnich",
+    "schedule": "Cada miércoles a las 20:00",
+    "startingDate": "A partir de mayo 2026",
+    "doorsOpen": "Puertas abiertas a las 19:30"
+  },
   "whatIs": {
     "label": "Sobre nosotros",
     "title": "¿Qué es 15x4?",
@@ -76,7 +84,7 @@
   "events": {
     "pageTitle": "Eventos - 15x4 Múnich",
     "heroTitle": "Eventos",
-    "heroDescription": "Únete a nosotros para una velada de curiosidad, aprendizaje y grandes conversaciones.",
+    "heroDescription": "Cada miércoles a las 20:00 en Buena Vista. Únete a nosotros para una velada de curiosidad, aprendizaje y grandes conversaciones.",
     "comingUp": "Próximamente",
     "upcomingEvents": "Próximos eventos",
     "details": "Detalles",

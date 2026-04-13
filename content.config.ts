@@ -8,6 +8,7 @@ export default defineContentConfig({
       schema: z.object({
         title: z.string(),
         date: z.string(),
+        time: z.string().optional(),
         venue: z.string().optional(),
         status: z.enum(['upcoming', 'past']),
         talks: z

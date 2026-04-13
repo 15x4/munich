@@ -56,6 +56,41 @@ const { data: upcomingEvents } = await useAsyncData('upcoming-events', () =>
       </div>
     </section>
 
+    <!-- Venue & Schedule -->
+    <section class="py-20 bg-surface">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <p class="text-accent font-bold text-xs uppercase tracking-[0.25em] mb-3">{{ t('venue.label') }}</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-primary uppercase tracking-tight mb-10">{{ t('venue.title') }}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-2xl p-8 shadow-sm">
+            <div class="w-14 h-14 mx-auto mb-4 border-2 border-accent/20 rounded-full flex items-center justify-center">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <p class="text-primary font-bold text-lg">{{ t('venue.location') }}</p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 shadow-sm">
+            <div class="w-14 h-14 mx-auto mb-4 border-2 border-accent/20 rounded-full flex items-center justify-center">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <p class="text-primary font-bold text-lg">{{ t('venue.schedule') }}</p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 shadow-sm">
+            <div class="w-14 h-14 mx-auto mb-4 border-2 border-accent/20 rounded-full flex items-center justify-center">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <p class="text-primary font-bold text-lg">{{ t('venue.startingDate') }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Upcoming Event -->
     <section
       v-if="upcomingEvents && upcomingEvents.length > 0"
@@ -82,8 +117,10 @@ const { data: upcomingEvents } = await useAsyncData('upcoming-events', () =>
           <h3 class="text-2xl md:text-3xl font-bold text-primary mb-3">
             {{ event.title }}
           </h3>
-          <p v-if="event.venue" class="text-gray-500 mb-6">
-            {{ event.venue }}
+          <p class="text-gray-500 mb-6">
+            <span v-if="event.venue">{{ event.venue }}</span>
+            <span v-if="event.venue && event.time"> &middot; </span>
+            <span v-if="event.time">{{ event.time }}</span>
           </p>
           <NuxtLink
             :to="event.path"

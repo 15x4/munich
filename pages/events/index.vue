@@ -59,6 +59,7 @@ const { data: pastEvents } = await useAsyncData('past', () =>
                 </h3>
                 <p class="text-gray-500 text-sm">
                   <span>{{ new Date(event.date).toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) }}</span>
+                  <span v-if="event.time" class="ml-2">&middot; {{ event.time }}</span>
                   <span v-if="event.venue" class="ml-2">&middot; {{ event.venue }}</span>
                 </p>
               </div>
