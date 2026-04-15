@@ -18,6 +18,14 @@
     "nextEvent": "Следующее мероприятие",
     "viewDetails": "Подробнее"
   },
+  "venue": {
+    "label": "Где и когда",
+    "title": "Приходите в Buena Vista",
+    "location": "Buena Vista, Мюнхен",
+    "schedule": "Каждую среду в 20:00",
+    "startingDate": "С мая 2026",
+    "doorsOpen": "Двери открываются в 19:30"
+  },
   "whatIs": {
     "label": "О нас",
     "title": "Что такое 15x4?",
