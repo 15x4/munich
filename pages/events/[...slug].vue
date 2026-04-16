@@ -83,9 +83,18 @@ useHead({ title: `${event.value.title} - 15x4 Munich` })
             <div>
               <h3 class="font-bold text-primary mb-1">{{ talk.title }}</h3>
               <p class="text-accent text-sm font-medium mb-2">{{ talk.speaker }}</p>
-              <p v-if="talk.description" class="text-gray-500 text-sm leading-relaxed">
+              <p v-if="talk.description && talk.title !== 'TBD'" class="text-gray-500 text-sm leading-relaxed">
                 {{ talk.description }}
               </p>
+              <a
+                v-if="talk.title === 'TBD'"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf1M9_FjiF0NTj2lvQYbA_rDBSi8g_8v0wmJ3ejR_2M-afZFQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block mt-1 text-accent hover:text-accent-dark text-sm font-semibold underline"
+              >
+                {{ t('hero.giveATalk') }} &rarr;
+              </a>
             </div>
           </div>
         </div>
