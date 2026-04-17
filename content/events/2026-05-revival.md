@@ -4,6 +4,7 @@ date: '2026-05-06'
 time: '20:00'
 venue: 'Buena Vista, Munich'
 status: upcoming
+rsvpUrl: 'https://www.meetup.com/15x4munich/events/314329163/'
 talks:
   - title: 'TBD'
     speaker: 'Open Slot'

@@ -64,6 +64,19 @@ useHead({ title: `${event.value.title} - 15x4 Munich` })
             {{ event.venue }}
           </span>
         </div>
+
+        <a
+          v-if="event.rsvpUrl && event.status === 'upcoming'"
+          :href="event.rsvpUrl"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 mt-8 px-6 py-3 bg-accent text-primary font-bold uppercase tracking-wider rounded-full hover:bg-accent-dark transition-colors"
+        >
+          {{ t('eventDetail.rsvp') }}
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
       </div>
     </section>
 
