@@ -6,9 +6,9 @@ venue: 'Buena Vista, Munich'
 status: upcoming
 rsvpUrl: 'https://www.meetup.com/15x4munich/events/314329163/'
 talks:
-  - title: 'TBD'
-    speaker: 'Open Slot'
-    description: ''
+  - title: 'Archeology'
+    speaker: 'Kurt'
+    description: 'How isotope analysis reads the past — from Ötzi''s last meal to the Bronze Age trade routes that brought copper, tin, and gold from three different countries into a single 3,600-year-old German artifact. Atoms remember.'
   - title: 'TBD'
     speaker: 'Open Slot'
     description: ''
