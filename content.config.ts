@@ -11,6 +11,7 @@ export default defineContentConfig({
         time: z.string().optional(),
         venue: z.string().optional(),
         status: z.enum(['upcoming', 'past']),
+        rsvpUrl: z.string().optional(),
         talks: z
           .array(
             z.object({
