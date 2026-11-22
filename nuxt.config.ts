@@ -64,6 +64,13 @@ export default defineNuxtConfig({
     name: '15x4 Munich',
   },
 
+  runtimeConfig: {
+    public: {
+      // PostHog project key (public). Env NUXT_PUBLIC_POSTHOG_KEY overrides; empty = no analytics.
+      posthogKey: 'phc_o9m27p9b9RWTbBFL3pwAkZkUhEAGUUSS6zg5bvFHs37h',
+    },
+  },
+
   nitro: {
     prerender: {
       routes: ['/sitemap.xml'],
